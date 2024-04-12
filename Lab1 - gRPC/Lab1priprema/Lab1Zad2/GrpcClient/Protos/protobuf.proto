@@ -1,0 +1,15 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "GrpcClient";
+
+package lab1;
+
+service MyService {
+	rpc OneData(IntValue) returns (google.protobuf.Empty);
+	rpc ManyData(stream IntValue) returns (stream IntValue);
+}
+
+message IntValue {
+	int32 value = 1;
+}

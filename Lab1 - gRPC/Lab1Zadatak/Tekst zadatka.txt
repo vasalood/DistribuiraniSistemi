@@ -1,0 +1,9 @@
+U .NET-u, koristeći gRPC, kreirati servis koji omogućava klijentima da pozovu sledeće procedure: 
+a. proceduru koja omogućava prosleđivanje toka celobrojnih podataka. Za tok podataka se računa 
+njegova srednja vrednost i smešta se u promenljivu acc unutar servisa. Procedura nema povratni tip.
+
+b. proceduru koja prihvata tok celobrojnih podataka, svaki parni element toka sabira promenljivom acc,
+dok svaki neparni množi promenljivom acc, i vraća tako modifikovani tok klijentu.
+
+Pretpostaviti da je prilikom pokretanja servisa vrednost promenljive acc = 12.
+U .NET-u kreirati gRPC klijenta koji će demonstrirati funkcionalnost gRPC servisa.
